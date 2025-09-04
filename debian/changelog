@@ -1,5 +1,18 @@
-template-repository (1.0-1) unstable; urgency=medium
+odr-padenc (3.0.0-3) unstable; urgency=medium
 
-  * Initial release
+  * Fix issue #1086938 (transitioning to imagemagick 7)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Robin Alexander <robin.alexander@netplus.ch>  Tue, 19 Nov 2024 18:33:48 +0100
+
+odr-padenc (3.0.0-2) unstable; urgency=low
+
+  * Fix lintian issues
+
+ -- Robin Alexander <robin.alexander@netplus.ch>  Wed, 05 Jul 2023 19:35:10 +0200
+
+odr-padenc (3.0.0-1) unstable; urgency=low
+
+  [ Robin Alexander ]
+  * Initial release. Closes: #1009060
+
+ -- Robin Alexander <robin.alexander@netplus.ch>  Thu, 07 Apr 2022 10:05:19 +0200
