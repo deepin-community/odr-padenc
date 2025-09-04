@@ -1,3 +1,9 @@
+odr-padenc (3.0.0-3deepin1) unstable; urgency=medium
+
+  * Rebuild against imagemagick 7.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 04 Sep 2025 23:19:49 +0800
+
 odr-padenc (3.0.0-3) unstable; urgency=medium
 
   * Fix issue #1086938 (transitioning to imagemagick 7)
