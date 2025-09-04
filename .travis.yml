@@ -1,0 +1,37 @@
+language: c++
+
+matrix:
+  include:
+    - os: linux
+      arch: amd64
+      dist: bionic
+      sudo: required
+      compiler: gcc
+      addons: &linuxaddons
+        apt:
+          sources: &sources
+            - sourceline: 'ppa:ubuntu-toolchain-r/test'
+          packages: &packages
+            - automake
+            - libboost-all-dev
+            - libcurl4-openssl-dev
+            - g++-9
+
+    - os: linux
+      arch: arm64
+      dist: bionic
+      sudo: required
+      compiler: gcc
+      addons: *linuxaddons
+
+script:
+  - |
+    ./bootstrap
+    CC=gcc-9 CXX=g++-9 ./configure
+    make
+  - |
+    sudo apt-get install libmagickwand-dev
+    ./bootstrap
+    CC=gcc-9 CXX=g++-9 ./configure
+    make
+
